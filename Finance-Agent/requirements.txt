@@ -1,0 +1,5 @@
+camel-ai
+yfinance
+camel-ai[tools]
+tavily-python
+llama-index
