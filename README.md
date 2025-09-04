@@ -1,4 +1,6 @@
-## Agent Git Repo
+## Practical AI Agents 
+
+![Practical AI Agents](imgs/banner.png)
 
 A collection of simple and advanced AI agents. Each agent is self-contained with a clear entrypoint and local dependencies when needed.
 
