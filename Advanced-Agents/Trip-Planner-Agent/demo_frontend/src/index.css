@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Travel-inspired color palette */
+    --background: 210 30% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Ocean blue primary */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 50%;
+
+    /* Soft sky secondary */
+    --secondary: 208 100% 97%;
+    --secondary-foreground: 214 84% 56%;
+
+    /* Muted tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 46%;
+
+    /* Sunset accent */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Sunset destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 84% 56%;
+
+    --radius: 0.5rem;
+
+    /* Travel gradients and special effects */
+    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%), hsl(25 95% 53%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 30% 98%));
+    --gradient-ocean: linear-gradient(180deg, hsl(214 84% 56%), hsl(195 100% 75%));
+    --gradient-sunset: linear-gradient(90deg, hsl(25 95% 53%), hsl(45 100% 60%));
+    
+    /* Travel shadows */
+    --shadow-travel: 0 10px 30px -10px hsl(214 84% 56% / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(214 32% 91% / 0.5);
+    --shadow-glow: 0 0 40px hsl(214 84% 56% / 0.15);
+    
+    /* Sidebar travel theme */
+    --sidebar-background: 210 30% 98%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 214 84% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 208 100% 97%;
+    --sidebar-accent-foreground: 214 84% 56%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 214 84% 56%;
+  }
+
+  .dark {
+    /* Dark travel theme */
+    --background: 215 25% 8%;
+    --foreground: 210 40% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Bright ocean primary for dark mode */
+    --primary: 214 100% 65%;
+    --primary-foreground: 215 25% 8%;
+    --primary-hover: 214 100% 70%;
+
+    /* Dark secondary */
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 210 40% 95%;
+
+    /* Dark muted */
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Warm sunset accent for dark */
+    --accent: 25 95% 60%;
+    --accent-foreground: 215 25% 8%;
+
+    /* Dark destructive */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 40% 95%;
+
+    /* Dark borders */
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 214 100% 65%;
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 65%), hsl(25 95% 60%));
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 10%), hsl(215 25% 12%));
+    --gradient-ocean: linear-gradient(180deg, hsl(214 100% 65%), hsl(195 100% 50%));
+    --gradient-sunset: linear-gradient(90deg, hsl(25 95% 60%), hsl(45 100% 55%));
+    
+    /* Dark shadows */
+    --shadow-travel: 0 10px 30px -10px hsl(214 100% 65% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(214 100% 65% / 0.2);
+    
+    /* Dark sidebar */
+    --sidebar-background: 215 25% 8%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 214 100% 65%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 215 25% 18%;
+    --sidebar-ring: 214 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Travel-specific component styles */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+  
+  .ocean-gradient {
+    background: var(--gradient-ocean);
+  }
+  
+  .sunset-gradient {
+    background: var(--gradient-sunset);
+  }
+  
+  .travel-shadow {
+    box-shadow: var(--shadow-travel);
+  }
+  
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .glow-shadow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Travel animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .travel-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+}
+
+@layer utilities {
+  /* Travel-specific utilities */
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
