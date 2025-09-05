@@ -1,8 +1,39 @@
-## Practical AI Agents 
-
+## AI-Agent-Lab: Learn Level 1 to Level 5 AI Agents
 ![Practical AI Agents](imgs/banner.png)
 
 A collection of simple and advanced AI agents. Each agent is self-contained with a clear entrypoint and local dependencies when needed.
+
+### Levels of AI Agents 
+
+#### Level 1: Reactive Agents (Stateless Tools)
+- **What they do:** Respond directly to prompts/inputs without memory.
+- **Examples:** ChatGPT answering a single query; an AI that summarizes text.
+- **Why it matters:** Baseline capability — pure input → output.
+
+#### Level 2: Memory-Enhanced Agents (Contextual Helpers)
+- **What they do:** Use short-term or long-term memory to improve responses over time.
+- **Examples:** LangChain agents with vector databases; AI customer support that remembers past chats.
+- **Why it matters:** Moves from "stateless tool" to "personalized assistant."
+
+#### Level 3: Tool-Using Agents (API/Environment Operators)
+- **What they do:** Call APIs, browse the web, interact with databases, or control external apps.
+- **Examples:** Agents that can use Python for math, query a database, or send emails.
+- **Why it matters:** Expands beyond conversation into action-taking.
+
+#### Level 4: Multi-Agent Systems (Collaborative Agents)
+- **What they do:** Multiple agents with specialized roles work together.
+- **Examples:**
+  - One agent researches, another summarizes, another critiques.
+  - AI "debate" or "teamwork" setups like AutoGen.
+- **Why it matters:** Specialization + collaboration → more robust results.
+
+#### Level 5: Autonomous Task Agents (Goal-Driven Executors)
+- **What they do:** Given a goal, they break it into subtasks, plan execution, and complete it with minimal human input.
+- **Examples:**
+  - AutoGPT-style loops.
+  - AI that researches, drafts, and revises a report end-to-end.
+  - Workflow engines combining planning + tool use + memory.
+- **Why it matters:** Represents the highest current level of autonomy that's practical and reproducible today.
 
 ### Featured Frameworks
 - **Python**: Primary language for all agents

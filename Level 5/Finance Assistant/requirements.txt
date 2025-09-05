@@ -3,3 +3,4 @@ yfinance
 camel-ai[tools]
 tavily-python
 llama-index
+crawl4AI

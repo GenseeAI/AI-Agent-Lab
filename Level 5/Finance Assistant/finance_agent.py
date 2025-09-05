@@ -22,8 +22,8 @@ import os
 
 
 
-# os.environ["TAVILY_API_KEY"] = "dummy key"
-# os.environ["OPENAI_API_KEY"] = "dummy key"
+os.environ["TAVILY_API_KEY"] = "dummy key"
+os.environ["OPENAI_API_KEY"] = "dummy key"
 
 tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
