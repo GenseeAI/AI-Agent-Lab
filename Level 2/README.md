@@ -1,4 +1,3 @@
-````markdown
 ## Level 2: Memory-Enhanced Agents (Contextual Helpers)
 
 Level 2 agents extend simple reactive tools by keeping and using context. They use short-term or long-term memory to provide more helpful, personalized, or stateful responses across interactions.
@@ -33,5 +32,3 @@ python cli.py --config configs/sample_workflow_config.json --max-examples 3
 ```
 
 For details on configuration fields, LLM settings, and analysis outputs, consult `README.md` and `config.py`.
-
-````
