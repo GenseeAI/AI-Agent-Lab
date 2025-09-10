@@ -1,0 +1,23 @@
+{
+  "task_description": "Q&A workflow that answers user questions by determining if internet search is needed and using search engines to provide accurate answers",
+  "call_example": "qa_workflow_example.py",
+  "parameters": [
+    {
+      "name": "tool_override",
+      "description": "Search tool configuration to use for finding information",
+      "options": [
+        "Tavily:Exa",
+        "Tavily:Tavily"
+      ],
+      "default": "Tavily:Exa"
+    }
+  ],
+  "max_examples": 10,
+  "timeout_seconds": 6000,
+  "inconsistency_threshold": 0.3,
+  "llm_provider": "openai",
+  "llm_model": "gpt-5",
+  "llm_temperature": 1.0,
+  "output_file": "qa_search_comparison_result.json",
+  "verbose": true
+}

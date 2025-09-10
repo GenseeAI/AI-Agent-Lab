@@ -3,7 +3,7 @@
 
 A collection of simple and advanced AI agents. Each agent is self-contained with a clear entrypoint and local dependencies when needed.
 
-### Levels of AI Agents 
+### Levels of AI Agents
 
 #### Level 1: Reactive Agents (Stateless Tools)
 - **What they do:** Respond directly to prompts/inputs without memory.
@@ -39,6 +39,7 @@ A collection of simple and advanced AI agents. Each agent is self-contained with
 ### Simple Agents
 - **QA-with-search**: Answers questions using a lightweight search/retrieval step.
 - **QA-with-translate**: Answers questions with simple translation for multilingual I/O.
+- **Meta-Agent: Workflow Parameter Comparison**: Generates examples, runs workflow parameter sweeps, and analyzes differences (see `Level 2/comparison-agent/README.md`).
 
 ### Advanced Agents
 - **CodeGen-Agent**: Program synthesis and evaluation workflows (HumanEval tooling and execution pipeline).
